@@ -1,0 +1,238 @@
+{
+	"id": "73ba5b79-6efc-4b96-90b7-5a9e421af89f",
+	"name": "EmployeeManagementSystemWithDB",
+	"timestamp": "2022-09-28T18:56:07.978Z",
+	"collection_id": "15859719-3567494b-9a14-434f-a784-b75270619c11",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3d6fb08c-65fe-4ed5-b423-633f37f6479a",
+			"name": "GetAllEmployees",
+			"url": "http://localhost:8080/employees/get/all",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "93e86e5b-6e3e-48ab-a3cf-12a4126e9b07",
+			"name": "GetEmployeeById",
+			"url": "http://localhost:8080/employees/get/id/1",
+			"time": 20,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				20
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cf36a5e7-5b66-4239-8719-9d510586fecd",
+			"name": "SaveEmployee",
+			"url": "http://localhost:8080/employees/save",
+			"time": 46,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				46
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b1b27d5a-c594-4ddc-b46c-8511dc21ecd4",
+			"name": "GetAllDepartments",
+			"url": "http://localhost:8080/departments/get/all",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "066f7716-7853-4d38-8c2e-dc4d2f922995",
+			"name": "GetDepartmentById",
+			"url": "http://localhost:8080/departments/get/id/1",
+			"time": 11,
+			"responseCode": {
+				"code": 302,
+				"name": "Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "75cdcc26-325e-4aee-a652-d04649199e51",
+			"name": "SaveDepartment",
+			"url": "http://localhost:8080/departments/save",
+			"time": 11,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cf462949-08a7-4048-a007-2d3f8a0b762f",
+			"name": "GetEmployeeBySalary",
+			"url": "http://localhost:8080/employees/get/salary/23000.000",
+			"time": 14,
+			"responseCode": {
+				"code": 302,
+				"name": "Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				14
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "16389aef-fe87-49ce-ab47-76336548af27",
+			"name": "GetEmployeeByDeptName",
+			"url": "http://localhost:8080/employees/get/deptName/eee",
+			"time": 7,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ecc378ea-d387-47f6-980d-10fe61e01051",
+			"name": "DeleteAllEmployeeRecord",
+			"url": "http://localhost:8080/employees/delete/all",
+			"time": 16,
+			"responseCode": {
+				"code": 302,
+				"name": "Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				16
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c515fdd7-6a05-41f0-a927-d914c3d56b7b",
+			"name": "UpdateEmployeeFirstNameBasedOnId",
+			"url": "http://localhost:8080/employees/update/id/1/name/D",
+			"time": 7,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 154,
+	"collection": {
+		"requests": [
+			{
+				"id": "3d6fb08c-65fe-4ed5-b423-633f37f6479a",
+				"method": "GET"
+			},
+			{
+				"id": "93e86e5b-6e3e-48ab-a3cf-12a4126e9b07",
+				"method": "GET"
+			},
+			{
+				"id": "cf36a5e7-5b66-4239-8719-9d510586fecd",
+				"method": "POST"
+			},
+			{
+				"id": "b1b27d5a-c594-4ddc-b46c-8511dc21ecd4",
+				"method": "GET"
+			},
+			{
+				"id": "066f7716-7853-4d38-8c2e-dc4d2f922995",
+				"method": "GET"
+			},
+			{
+				"id": "75cdcc26-325e-4aee-a652-d04649199e51",
+				"method": "POST"
+			},
+			{
+				"id": "cf462949-08a7-4048-a007-2d3f8a0b762f",
+				"method": "GET"
+			},
+			{
+				"id": "16389aef-fe87-49ce-ab47-76336548af27",
+				"method": "GET"
+			},
+			{
+				"id": "ecc378ea-d387-47f6-980d-10fe61e01051",
+				"method": "DELETE"
+			},
+			{
+				"id": "c515fdd7-6a05-41f0-a927-d914c3d56b7b",
+				"method": "PUT"
+			}
+		]
+	}
+}
